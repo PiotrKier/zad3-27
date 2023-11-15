@@ -1,0 +1,73 @@
+<html>
+<head>
+<title> Piotr Kierbedź 2P </title>
+</head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<textarea readonly rows="57" cols="100">
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+function AB_kie()
+{
+var xa_kie= parseFloat(document.getElementById('xa_dane').value);
+var ya_kie= parseFloat(document.getElementById('ya_dane').value);
+var xb_kie= parseFloat(document.getElementById('xb_dane').value);
+var yb_kie= parseFloat(document.getElementById('yb_dane').value);
+var dlugoscAB= Math.sqrt(Math.pow(xa_kie - xb_kie,2) + Math.pow(ya_kie - yb_kie,2));
+document.getElementById("nazwa").innerHTML ="Długość boku AB= "+dlugoscAB.toFixed(2)+" cm";
+}
+function BC_kie()
+{
+var xb_kie= parseFloat(document.getElementById('xb_dane').value);
+var yb_kie= parseFloat(document.getElementById('yb_dane').value);
+var xc_kie= parseFloat(document.getElementById('xc_dane').value);
+var yc_kie= parseFloat(document.getElementById('yc_dane').value);
+var dlugoscBC= Math.sqrt(Math.pow(xb_kie - xc_kie,2) + Math.pow(yb_kie - yc_kie,2));
+document.getElementById("nazwa").innerHTML ="Długość boku BC= "+dlugoscBC.toFixed(2)+" cm";
+}
+function CA_kie()
+{
+var xc_kie= parseFloat(document.getElementById('xc_dane').value);
+var yc_kie= parseFloat(document.getElementById('yc_dane').value);
+var xa_kie= parseFloat(document.getElementById('xa_dane').value);
+var ya_kie= parseFloat(document.getElementById('ya_dane').value);
+var dlugoscCA= Math.sqrt(Math.pow(xc_kie - xa_kie,2) + Math.pow(yc_kie - ya_kie,2));
+document.getElementById("nazwa").innerHTML ="Długość boku CA= "+dlugoscCA.toFixed(2)+" cm";
+}
+</script>
+<h1>Obliczam długość boków</h1><br><br>
+Podaj współrzędną xa <input type="text" id="xa_dane" value="podaj współrzędną xa"> cm<br><br><br>
+Podaj współrzędną ya <input type="text" id="ya_dane" value="podaj współrzędną ya"> cm<br><br><br>
+Podaj współrzędną xb <input type="text" id="xb_dane" value="podaj współrzędną xb"> cm<br><br><br>
+Podaj współrzędną yb <input type="text" id="yb_dane" value="podaj współrzędną yb"> cm<br><br><br>
+Podaj współrzędną xc <input type="text" id="xc_dane" value="podaj współrzędną xc"> cm<br><br><br>
+Podaj współrzędną yc <input type="text" id="yc_dane" value="podaj współrzędną yc"> cm<br><br><br>
+<input type="button" name="pole" value="Oblicz długość odcinka AB" Onclick="AB_kie()"><br><br>
+<input type="button" name="pole" value="Oblicz długość odcinka BC" Onclick="BC_kie()"><br><br>
+<input type="button" name="pole" value="Oblicz długość odcinka AC" Onclick="CA_kie()"><br><br>
+
+<div style="color:red;font-size:50px;"id="nazwa"></div>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

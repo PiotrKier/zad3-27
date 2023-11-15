@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> Piotr Kierbedź 2P </title>
+</head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<textarea readonly rows="36" cols="77">
+<html>
+<head>
+<title> Użycie fukcji </title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:50px;">
+<script language="JavaScript">
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+function suma_kie(a, b) {
+return a+b;
+}
+function odejmowanie_kie(a, b) {
+return a-b;
+}
+function mnozenie_kie(a, b) {
+return a*b;
+}
+function do_kwadratu_kie(a, b) {
+return " <br>"+a+"^2 = "+a*a+" <br>"+b+"^2 = "+b*b+;
+}
+function reszta_z_dzielenia_a_przez_b_kie(a, b) {
+return a%b;
+}
+document.write("suma = "+suma_kie(a,b)+"<br>");
+document.write("odejmowanie = "+odejmowanie_kie(a,b)+"<br>");
+document.write("mnozenie = "+mnozenie_kie(a,b)+"<br>");
+document.write("do kwadratu (a) = "+do_kwadratu_kie(a,b)+"<br>");
+document.write("reszta z dzielenia a przez b = "+reszta_z_dzielenia_a_przez_b_kie(a, b)+" <br>");
+</script>
+</div>
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

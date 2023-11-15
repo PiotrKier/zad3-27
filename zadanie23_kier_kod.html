@@ -1,0 +1,69 @@
+<html>
+<head>
+<title> Piotr Kierbedź 2P </title>
+</head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<textarea readonly rows="54" cols="100">
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Piotr Kierbedź 2P </title>
+<link rel="stylesheet" href="styl.css">
+<script type="text/javascript">
+function drabina(d,x)
+{
+d_kie= parseFloat(d);
+x_kie= parseFloat(x);
+v_kie= (d_kie*d_kie)+(x_kie*x_kie);
+wynik_kie= Math.sqrt(v_kie);
+
+document.getElementByName("dlugosc")[0].value=wynik_kie.toFixed(2); /* na dokument */
+}
+function kat(d,x)
+{
+d_kie= parseFloat(d);
+x_kie= parseFloat(x);
+alfa=d_kie/x_kie;
+radianty=Math.atan(alfa);
+stopnie=(radianty*180)/Math.PI;
+
+document.getElementByName("alfa")[0].value=stopnie.toFixed(2);
+}
+</script>
+</head>
+<body>
+<h1>Obliczanie odległości od drabiny i kąta alfa</h1>
+<br><br>
+<form name="formularz" action="..." onsubmit="drabina(this.wysokosc.value,this.odleglosc.value); kat(this.wysokosc.value,this.odleglosc.value);return false">
+Podaj d=
+<input size="6" name="wysokosc"/>
+Podaj x=
+<input size="6" name="odleglosc"/>
+<br><br>
+
+<input TYPE="submit" value="Oblicz"/>
+
+<br><br>
+
+Drabina = 
+<input size="6" name="odleglosc"/>
+
+Alfa = 
+<input size="6" name="alfa"/>
+
+<br><br>
+
+</form>
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

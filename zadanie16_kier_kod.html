@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> Piotr Kierbedź 2P </title>
+</head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<textarea readonly rows="29" cols="77">
+<html>
+<head>
+<title> Piotr Kierbedź 2P </title>
+</head>
+<body>
+<div style="color:green;font-size:43px;">
+<script language="JavaScript">
+var a_kie=prompt("a_kie =");
+var a_kie=parseFloat(a_kie);
+var b_kie=prompt("b_kie =");
+var b_kie=parseFloat(b_kie);
+
+a2_kie = a_kie*a_kie*a_kie;
+ab_kie = 3*((a_kie*a_kie)*b_kie);
+ab2_kie = 3*(a_kie)*(b_kie*b_kie);
+b2_kie = b_kie*b_kie*b_kie;
+wynik = a2_kie+b2_kie+ab_kie+ab2_kie;
+
+document.write("A = "+a_kie+" <br>");
+document.write("B = "+b_kie+" <br>");
+
+document.write("("+a_kie+" + "+b_kie+")^3 = "+a_kie+"^3 + 3*(("+a_kie+")^2)*("+b_kie+") + 3*("+a_kie+")*(("+b_kie+")^2) + "+b_kie+"^3 = "+a2_kie+" + "+ab_kie+" + "+ab2_kie+" + "+b2_kie+" = "+wynik+" <br>");
+</script>
+</div>
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

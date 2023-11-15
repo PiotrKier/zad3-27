@@ -1,0 +1,57 @@
+<html>
+<head>
+<script language="JavaScript">
+function p(a, b, h) {
+a_kie = parseFloat(a);
+b_kie = parseFloat(b);
+h_kie = parseFloat(h);
+
+Math.abs(a_kie);
+Math.abs(b_kie);
+Math.abs(h_kie);
+
+pole_wynik = 0.5 * (a_kie + b_kie) * h_kie;
+document.getElementsByName('pol')[0].value = pole_wynik.toFixed(2);
+pokaz1.innerHTML = "pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>";
+}
+function o(a, b, h) {
+a_kie = parseFloat(a);
+b_kie = parseFloat(b);
+h_kie = parseFloat(h);
+
+Math.abs(a_kie);
+Math.abs(b_kie);
+Math.abs(h_kie);
+
+var ramie = Math.sqrt(Math.pow((a_kie - b_kie)/ 2, 2) + Math.pow(h_kie, 2));
+
+obwod_wynik = a_kie + b_kie + 2 * ramie;
+document.getElementsByName('obw')[0].value = obwod_wynik.toFixed(2);
+pokaz2.innerHTML = "obwod=" + obwod_wynik.toFixed(2) + "cm";
+}
+</script>
+</head>
+<body>
+<br> <br>
+<form name="formularz" action="..."
+onsubmit="p(this.a_kie.value,this.b_kie.value,this.h_kie.value); o(this.a_kie.value,this.b_kie.value,this.h_kie.value);return false">
+Podaj a=
+<input size="6" name="a_kie">
+Podaj b=
+<input size="6" name="b_kie">
+Podaj h=
+<input size="6" name="h_kie">
+<br> <br>
+<input TYPE="submit" Value="oblicz">
+<br> <br>
+pole=
+<input size="6" name="pol">
+obwod=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

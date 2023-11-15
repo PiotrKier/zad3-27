@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> Piotr Kierbedź 2P </title>
+</head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<textarea readonly rows="42" cols="77">
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Piotr Kierbedź 2P </title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+function pole_kierbedz()
+{
+var a_kie= parseFloat(document.getElementById('dlugosc').value);
+var b_kie= a_kie*a_kie;
+document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_kie.toFixed(2)+" cm^2";
+}
+function obwod_kierbedz()
+{
+var a_kie= parseFloat(document.getElementById('dlugosc').value);
+var b_kie= 4*a_kie;
+document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_kie.toFixed(2)+" cm";
+}
+</script>
+<h1>Wszystko o KWADRACIE</h1><br><br>
+Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+<input type="button" name="pole_kierbedz" value="Oblicz pole" Onclick="pole_kierbedz()"><br><br>
+<input type="button" name="obwod_kierbedz" value="Oblicz obwod" Onclick="obwod_kierbedz()"><br><br>
+<div style="color:red;font-size:50px;"id="nazwa"></div>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

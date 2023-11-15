@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> Piotr Kierbedź 2P </title>
+</head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<textarea readonly rows="39" cols="100">
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Piotr Kierbedź 2P </title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+function pole_kierbedz()
+{
+var a_kie= parseFloat(document.getElementById('dlugosc').value);
+var b_kie= parseFloat(document.getElementById('dlugosc2').value);
+var c_kie= a_kie*b_kie;
+document.getElementById("nazwa").innerHTML ="Pole prostokąta= "+c_kie.toFixed(2)+" cm^2";
+}
+function obw_kierbedz()
+{
+var a_kie= parseFloat(document.getElementById('dlugosc').value);
+var b_kie= parseFloat(document.getElementById('dlugosc2').value);
+var d_kie= 2*a_kie+2*b_kie;
+document.getElementById("nazwa").innerHTML ="Obwód prostokąta= "+d_kie.toFixed(2)+" cm";
+}
+</script>
+<h1>Wszystko o Prostokącie</h1><br><br>
+Podaj długość boku a: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+Podaj długość boku b: <input type="text" id="dlugosc2" value="podaj długość"> cm<br><br><br>
+<input type="button" name="pole_kierbedz" value="Oblicz pole" Onclick="pole_kierbedz()"><br><br>
+<input type="button" name="obw_kierbedz" value="Oblicz obwod" Onclick="obw_kierbedz()"><br><br>
+<div style="color:red;font-size:50px;"id="nazwa"></div>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Piotr Kierbedź 2P</title>
+<script language="JavaScript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+
+<h1>1)Rodzaje okienek</h1>
+
+<ul type="circle">
+<li>Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK.</li>
+<li>Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu.</li>
+<li>Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</li>
+</ul>
+
+<h1>2)Konwersja liczb</h1>
+
+<p>Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków, 
+dlatego konieczna jest konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia.</p>
+
+<ul type="square">
+<li>parseFloat(zmienna) - konwersja zmiennej do typu float</li>
+<li>parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego)</li>
+<li>toString(zmienna) - konwersja zmiennej do typu łańcuchowego</li>
+</ul>
+
+<h1>3)Przy nadawaniu nazw zmiennych należy przestrzegać pewnych zasad:</h1>
+
+<ol>
+<li>Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".</li>
+<li>Wielkość liter ma znaczenie.</li>
+<li>Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.</li>
+</ol>
+
+<h1>4)Omów typy zmiennych w Javascript</h1>
+
+<ol type="I">
+<li>Number = Typ liczbowy</li>
+<li>String = Typ tekstowy</li>
+<li>Boolea = Typ logiczny</li>
+<li>Null = Pusta zawartość</li>
+<li>Undefined = Typ niezidentyfikowany</li>
+<li>Object = Obiekt</li>
+</ol>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+
+</body>
+</html>
